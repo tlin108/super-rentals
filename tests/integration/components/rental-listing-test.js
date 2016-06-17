@@ -17,7 +17,7 @@ test('should toggle wide class on click', function(assert) {
     bedrooms: 3
   });
   this.set('rentalObj', stubRental);
-  this.render(hbs'{{rental-listing rental=rentalObj}}');
+  this.render(hbs`{{rental-listing rental=rentalObj}}`);
   assert.equal(this.$('.image.wide').length, 0, 'initially rendered small');
   this.$('.image').click();
   assert.equal(this.$('.image.wide').length, 1, 'rendered wide after click');
